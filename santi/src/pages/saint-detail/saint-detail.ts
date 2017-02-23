@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { Santo} from '../../models/santo';
 
 
 /*
@@ -13,7 +14,7 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'saint-detail.html'
 })
 export class SaintDetailPage {
-  santo:any;
+  santo:Santo[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.santo = navParams.get("item");

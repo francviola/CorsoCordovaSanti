@@ -5,6 +5,7 @@ import { NavController } from 'ionic-angular';
 import { SaintDetailPage } from '../saint-detail/saint-detail';
 
 import { SaintProvider} from '../../providers/saint-provider';
+import { Santo} from '../../models/santo';
 
 @Component({
   selector: 'page-about',
@@ -13,7 +14,7 @@ import { SaintProvider} from '../../providers/saint-provider';
 })
 export class AboutPage {
   
-  santi: any;
+  santi: Santo[];
 
   constructor(public navCtrl: NavController,public saintService:SaintProvider) {
     //this.santi={};
